@@ -11,7 +11,7 @@
 
 2. $cd flask-docker-aws
 3. On AWS web concole (https://us-west-2.console.aws.amazon.com/ecr/repositories?region=us-west-2#) you need Create repository with name "flask-docker-aws"
-4.Open it "flask-docker-aws"  and push button "view push commands" there you will see commands for build and upload your docker container
+4. Open it "flask-docker-aws"  and push button "view push commands" there you will see commands for build and upload your docker container
   In my account:
     
         $sudo $(aws ecr get-login --no-include-email --region us-west-2)
