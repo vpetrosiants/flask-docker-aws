@@ -8,8 +8,8 @@
               aws_secret_access_key = YOU_ACCESS_KEY
 
 
-2.$cd flask-docker-aws
-3.On AWS web concole (https://us-west-2.console.aws.amazon.com/ecr/repositories?region=us-west-2#) you need Create repository with name "flask-docker-aws"
+2. $cd flask-docker-aws
+3. On AWS web concole (https://us-west-2.console.aws.amazon.com/ecr/repositories?region=us-west-2#) you need Create repository with name "flask-docker-aws"
 4.Open it "flask-docker-aws"  and push button "view push commands" there you will see commands for build and upload your docker container
   In my account:
     $sudo $(aws ecr get-login --no-include-email --region us-west-2)
@@ -17,7 +17,7 @@
     $sudo docker tag flask-docker-aws:latest 099698789819.dkr.ecr.us-west-2.amazonaws.com/flask-docker-aws:latest
     $sudo docker push 099698789819.dkr.ecr.us-west-2.amazonaws.com/flask-docker-aws:latest
 
-5.Open repository "flask-docker-aws" in AWS web console and copy link to container in my case it "099698789819.dkr.ecr.us-west-2.amazonaws.com/flask-docker-aws"
+5. Open repository "flask-docker-aws" in AWS web console and copy link to container in my case it "099698789819.dkr.ecr.us-west-2.amazonaws.com/flask-docker-aws"
     then paste it to flask-docker-aws/terraform/variables.tf in 11 line. Save file.
 
 6. Opent AWS web console IAM  (https://console.aws.amazon.com/iam/home?region=us-west-2#/roles) and create two roles
