@@ -3,9 +3,10 @@
 1. You will need Docker(with sudo permissions) and Terraform on you PC\laptop and of course aws account
     I used my laptop with Ubuntu 18 and my aws account
     By default aws creds store in /home/YOUR_USERNAME/.aws (in my case)
-              [terraform]
-              aws_access_key_id = YOUR_KEY_ID
-              aws_secret_access_key = YOU_ACCESS_KEY
+            
+              *[terraform]
+              *aws_access_key_id = YOUR_KEY_ID
+              *aws_secret_access_key = YOU_ACCESS_KEY
 
 
 2. $cd flask-docker-aws
